@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./src/assets/icon.gif"> <!-- for the icon -->
     <title>Will You Be My Valentine?</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +14,7 @@
             
             <!-- Initial Question Screen -->
             <div id="questionScreen" class="screen">
-                <h1>Will you be my Valentine baby?</h1>
+                <h1>Will you be my Valentine, baby?</h1>
                 <div class="button-container">
                     <button id="yesBtn" class="yes-btn">Yes</button>
                     <button id="noBtn" class="no-btn">No :(</button>
@@ -30,6 +31,12 @@
             <div id="activityScreen" class="screen" style="display: none;">
                 <h1>What do you want to do? 💭</h1>
                 <div class="activity-container" id="activityContainer"></div>
+            </div>
+
+            <!-- Location Selection Screen -->
+            <div id="locationScreen" class="screen" style="display: none;">
+                <h1>Where should we meet? 🗺️</h1>
+                <div class="location-container" id="locationContainer"></div>
             </div>
 
             <!-- Final Screen -->
