@@ -143,7 +143,11 @@ html, body {
   margin-top: 20px;
   max-height: 60vh;
   overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   padding-bottom: 10px;
+  touch-action: pan-y;
 }
 
 .activity-btn {
