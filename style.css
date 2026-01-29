@@ -5,18 +5,27 @@ html, body {
   width: 100%;
 }
 
+/* Desktop background */
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
-  background-image: url('./src/assets/bg.jpg');
+  background-image: url('./src/assets/mb_bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+/* Mobile background */
+@media (max-width: 768px) {
+  .App {
+    background-image: url('./src/assets/mb_bg.jpg');
+    background-attachment: scroll;
+  }
 }
 
 .App-header {
