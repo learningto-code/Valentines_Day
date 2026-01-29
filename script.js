@@ -138,8 +138,19 @@ function handleActivitySelect(activityName, activityGif) {
   state.selectedActivity = activityName;
   state.activitySelected = true;
   mainGif.src = './src/assets/ok.gif';
-  selectedDateDisplay.textContent = state.selectedDate;
-  selectedActivityDisplay.textContent = activityName;
+  
+  // Build the final message with special cases
+  const finalH1 = document.querySelector('#finalScreen h1');
+  let finalMessage = '';
+  
+  if (state.selectedDate === 'Other - lmk pu') {
+    finalMessage = "Okieee! We'll plan it further pa 💕";
+  } else {
+    const activityText = activityName === 'All' ? "we'll do lots of activities" : activityName;
+    finalMessage = `Okieee! See you on ${state.selectedDate} - ${activityText}! 💕`;
+  }
+  
+  finalH1.innerHTML = finalMessage;
   
   // Send data to formspree
   sendToFormspree(activityName);
