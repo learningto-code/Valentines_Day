@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="App">
+        <header class="App-header">
+            <img id="mainGif" src="./src/assets/question.gif" alt="cute gif" class="cute-gif">
+            
+            <!-- Initial Question Screen -->
+            <div id="questionScreen" class="screen">
+                <h1>Will you be my Valentine baby?</h1>
+                <div class="button-container">
+                    <button id="yesBtn" class="yes-btn">Yes</button>
+                    <button id="noBtn" class="no-btn">No :(</button>
+                </div>
+            </div>
+
+            <!-- Date Selection Screen -->
+            <div id="dateScreen" class="screen" style="display: none;">
+                <h1>Yipeeee 💕 When are you available? 🥰</h1>
+                <div class="date-container" id="dateContainer"></div>
+            </div>
+
+            <!-- Activity Selection Screen -->
+            <div id="activityScreen" class="screen" style="display: none;">
+                <h1>What do you want to do? 💭</h1>
+                <div class="activity-container" id="activityContainer"></div>
+            </div>
+
+            <!-- Final Screen -->
+            <div id="finalScreen" class="screen" style="display: none;">
+                <h1>Okieee! Save the date <span id="selectedDateDisplay"></span> - <span id="selectedActivityDisplay"></span> with my baby ! 💕</h1>
+            </div>
+        </header>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
