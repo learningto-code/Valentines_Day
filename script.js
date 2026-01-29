@@ -252,7 +252,7 @@ function proceedToFinalScreen() {
       activityText = otherActivities.join(', ') + ', and ' + lastActivity;
     }
     
-    finalMessage = `Okieee! See you on ${state.selectedDate} at ${state.selectedLocation} for ${activityText}! I can't wait! 💕`;
+    finalMessage = `Okieee! See you on ${state.selectedDate} for our date at ${state.selectedLocation} for ${activityText}! I can't wait! 💕`;
   }
   
   finalH1.innerHTML = finalMessage;
